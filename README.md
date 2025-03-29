@@ -1,77 +1,106 @@
-#   **Recipe Traffic Prediction for Tasty Bytes**
+# Recipe Traffic Prediction for Tasty Bytes
 
-    This project focuses on predicting recipe traffic for the _Tasty Bytes_ website. The primary objective is to develop a model that can accurately forecast which recipes will attract high user traffic, enabling the website to optimize its homepage content and, consequently, increase overall user engagement and drive subscription growth. This analysis was conducted as part of a **DataCamp Professional Data Scientist Certification** practical exam.
+## Overview
+This project focuses on predicting recipe traffic for the **Tasty Bytes** website. The primary objective is to develop a model that can accurately forecast which recipes will attract high user traffic, enabling the website to optimize its homepage content and enhance user engagement, ultimately driving subscription growth.
 
-    You can find the project instructions and the code in this repository.
+This analysis was conducted as part of the **DataCamp Professional Data Scientist Certification** practical exam.
 
-    Table of Contents
-    -----------------
-    1.  **Project Description**
-    2.  **Dependencies**
-    3.  **Data Information**
-    4.  **Code Overview**
-    5.  **Analysis Summary**
-    6.  **How to Run the Code**
-    7.  **Author Information**
+---
 
-    ##  1.  **Project Description**
+## Table of Contents
+- [Project Description](#project-description)
+- [Dependencies](#dependencies)
+- [Data Information](#data-information)
+- [Code Overview](#code-overview)
+- [Analysis Summary](#analysis-summary)
+- [How to Run the Code](#how-to-run-the-code)
+- [Author Information](#author-information)
 
-    This project addresses the challenge of predicting recipe traffic for the _Tasty Bytes_ website. The goal is to develop a machine learning model that can effectively determine which recipes are likely to be popular and drive high traffic. The analysis involves a comprehensive workflow, including:
+---
 
-    * **Data Cleaning and Preprocessing:** Handling missing values, converting data types, and encoding categorical variables.
-    * **Exploratory Data Analysis (EDA):** Visualizing data distributions and relationships to gain insights.
-    * **Feature Engineering:** Creating new features to potentially improve model predictive power.
-    * **Model Development and Evaluation:** Training and evaluating machine learning models (XGBoost and SVM) to predict high traffic.
+## Project Description
+This project aims to predict recipe traffic using machine learning techniques. The workflow includes:
 
-    The successful implementation of such a model can provide valuable insights for content placement on the Tasty Bytes homepage, leading to increased user engagement and subscription rates.
+- **Data Cleaning and Preprocessing:** Handling missing values, data type conversions, and encoding categorical variables.
+- **Exploratory Data Analysis (EDA):** Visualizing data distributions and relationships to gain insights.
+- **Feature Engineering:** Creating new features to improve model predictive performance.
+- **Model Development and Evaluation:** Training and evaluating machine learning models (XGBoost and SVM) to predict high-traffic recipes.
 
-    ##  2.  **Dependencies**
+Successful implementation of this model can provide actionable insights for content placement on the **Tasty Bytes** homepage, leading to increased user engagement and higher subscription rates.
 
-    The project is implemented in Python 3.x and requires the following libraries:
+---
 
-    ```bash
-    pip install pandas numpy matplotlib seaborn scikit-learn xgboost
-    ```
+## Dependencies
+This project is implemented in **Python 3.x** and requires the following libraries:
 
-    It is highly recommended to use a Jupyter Notebook environment (e.g., JupyterLab, Google Colab) to execute the code.
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+```
 
-    ##  3.  **Data Information**
+It is recommended to use a **Jupyter Notebook environment** (e.g., JupyterLab, Google Colab) to execute the code.
 
-    The dataset used in this analysis was provided by Tasty Bytes. It comprises recipe-related information, including:
+---
 
-    * Nutritional details (calories, carbohydrate, sugar, protein)
-    * Recipe category
-    * Serving size
-    * An indicator representing high traffic
+## Data Information
+The dataset used in this analysis was provided by **Tasty Bytes** and includes:
 
-    ##  4.  **Code Overview**
+- **Nutritional details** (calories, carbohydrates, sugar, protein)
+- **Recipe category**
+- **Serving size**
+- **High traffic indicator** (label for prediction)
 
-    The main codebase for this project is the Jupyter Notebook: `recipe_traffic_prediction_analysis.ipynb`
+---
 
-    This notebook contains all the code for data loading, cleaning, preprocessing, exploratory analysis, feature engineering, model training, and evaluation.
+## Code Overview
+The primary code for this project is in the Jupyter Notebook:
 
-    ##  5.  **Analysis Summary**
+**`recipe_traffic_prediction_analysis.ipynb`**
 
-    The analysis process can be summarized as follows:
+This notebook includes all necessary steps such as data loading, preprocessing, exploratory analysis, feature engineering, model training, and evaluation.
 
-    1.  **Data Cleaning and Preprocessing:** The dataset was cleaned to handle missing values and prepare the data for analysis.
-    2.  **Exploratory Data Analysis (EDA):** EDA techniques were used to understand the distribution of variables and relationships between them.
-    3.  **Feature Engineering:** New features were created to potentially improve the predictive power of the models.
-    4.  **Model Development:** Machine learning models (XGBoost and SVM) were trained to predict high-traffic recipes.
-    5.  **Model Evaluation:** The performance of the models was evaluated using appropriate metrics.
+---
 
-    ##  6.  **How to Run the Code**
+## Analysis Summary
 
-    To execute the analysis:
+### **1. Data Cleaning and Preprocessing:**
+- Handled missing values and ensured data consistency.
+- Encoded categorical variables.
 
-    1.  Ensure that you have Python 3.x installed.
-    2.  Install the required libraries using pip:
-        ```bash
-        pip install pandas numpy matplotlib seaborn scikit-learn xgboost
-        ```
-    3.  Open the `recipe_traffic_prediction_analysis.ipynb` notebook in a Jupyter environment (JupyterLab or Google Colab).
-    4.  Run the notebook cells sequentially to reproduce the analysis.
+### **2. Exploratory Data Analysis (EDA):**
+- Visualized key variables and their relationships.
 
-    ##  7.  **Author Information**
+### **3. Feature Engineering:**
+- Created new features to enhance model predictive performance.
 
-    This analysis was conducted by **Efstratios Karkanis** as part of the DataCamp Professional Data Scientist Certification.
+### **4. Model Development:**
+- Trained **XGBoost** and **SVM** models to predict high-traffic recipes.
+
+### **5. Model Evaluation:**
+- Assessed model performance using appropriate evaluation metrics.
+
+---
+
+## How to Run the Code
+
+To execute the analysis, follow these steps:
+
+1. Ensure you have **Python 3.x** installed.
+2. Install required libraries:
+   ```bash
+   pip install pandas numpy matplotlib seaborn scikit-learn xgboost
+   ```
+3. Open the **`recipe_traffic_prediction_analysis.ipynb`** notebook in a Jupyter environment (JupyterLab or Google Colab).
+4. Run all notebook cells sequentially to reproduce the analysis.
+
+---
+
+## Author Information
+
+This project was conducted by **Efstratios Karkanis** as part of the **DataCamp Professional Data Scientist Certification** practical exam.
+
+For any inquiries or collaborations, feel free to reach out!
+
+---
+
+### **License**
+This project is licensed under the [MIT License](LICENSE).
